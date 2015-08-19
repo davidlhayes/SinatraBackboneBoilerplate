@@ -1,0 +1,27 @@
+<h1>Exercise 5</h1>
+
+<h3>To Do List</h3>
+
+<section id='container'>
+
+</section>
+
+<script type="text/javascript">
+
+  var app = app || {};
+  app.listItemView = Backbone.View.extend({
+    initialize: function() {
+      this.render();
+    },
+    render: function() {
+      this.$el.append('<img src="http://buzzsharer.com/wp-content/uploads/2015/07/Yorkshire-Terrier.jpg">');
+    }
+  });
+
+var listItem = new app.listItemView({
+  el: $('#container')
+});
+
+
+
+</script>
